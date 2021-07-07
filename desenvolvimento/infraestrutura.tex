@@ -8,7 +8,7 @@
     freezer obviamente será imprescindível um termômetro,
     para ser mais especifico um sensor como uma sonda para facilitar
     o processo de instalação, que será integrado
-    a um microcontrolador, como um CLP ou arduíno, 
+    a um microcontrolador, como um CLP ou Arduíno, 
     como mostrado na figura \ref{fig:termometro}.
 
     Para a escolha do termômetro o critério usado foi 
@@ -41,8 +41,8 @@
 
     Considerando que cada freezer terá seu próprio microcontrolador
     facilitará assim a compra da peça pois cada microcontrolador 
-    terá apenas a entrada do termômetro;
-    como saída um modulo de internet, 
+    terá apenas como entrada do termômetro
+    e como saída um modulo de internet, 
     devido a esta quantidade de entradas e saídas pequena o custo
     de cada microcontrolador pode cair consideravelmente.
 
@@ -67,13 +67,13 @@
     por ser simples, rápido, pequeno e de um baixo custo,
     este é muito usado em automação de processos
     de vários tipos. È recomendável para manter o 
-    arduíno conservado e funcional coloca-lo em um case
+    Arduíno conservado e funcional colocá-lo em um case
     \footnote{
         Exemplo de case: \url{https://www.eletrogate.com/case-para-arduino-uno-em-acrilico-transparente}
         Acessado em 15 de Dez. 2020
     },
     uma caixa feita normalmente de plástico ou acrílico 
-    para guardar e conservar-lo.
+    para guardar e conservá-lo.
 
     Quanto ao servidor apesar de ser uma parte importante 
     da infraestrutura, pensando em manter a simplicidade 
@@ -92,3 +92,16 @@
     assim a empresa não ficará presa a um único provedor 
     e em caso de alguma eventual falha o segundo link 
     assumirá mantendo tudo em funcionamento.
+
+    Como dito anteriormente o microcontrolador terá
+    a entrada do termômetro e a saída conectada a um modulo de internet
+    como mostrado na figura \ref{fig:esquemaFisico}, onde transmitirá 
+    os dados para o servidor em uma nuvem privada.
+
+    \begin{figure}[ht]
+        \caption{Esquema Físico}
+        \centering
+        \includegraphics[width=0.85\textwidth]{img/esquema_fisico.png}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:esquemaFisico}
+    \end{figure}
