@@ -32,7 +32,7 @@
     com o banco de dados que deverá ser relacional e com recursos
     para alta disponibilidade, para a escolha do banco pensando nos
     critérios anteriores e em um custo baixo foi escolhido o 
-    postgreSQL.
+    PostgreSQL.
 
     A integração entre o back-end e o front-end será feita 
     através de uma API REST, o que possibilita a integração 
@@ -40,33 +40,121 @@
     sistemas caso necessário, essa API também será usada 
     para conectar os microcontroladores com o banco de dados.
 
-    Quanto a mobilidade do sistema, como é um sistema web
-    então é acessado pelo navegador e pode ser facilmente
-    acessado por um SmartPhone, o sistema será responsivo, 
-    porem se o cliente quiser um desempenho melhor e 
-    uma experiencia personalizada, um aplicativo 
-    mobile pode ser desenvolvido em React Native 
-    juntamente como o sistema, claro que isso aumentará 
-    os custos do desenvolvimento.
+    O sistema será primariamente acessado pelo computador
+    utilizando um navegador web, como Google Chrome, 
+    Opera, Firefox, etc. 
+    Porem devido a responsividade do sistema também será
+    possível acessá-lo pelo navegador de um smartphone,
+    caso o cliente tenha interesse no desenvolvimento de
+    um aplicativo para smartphones android e IOS
+    poderemos criar esse aplicativo utilizando 
+    React Native, claro que o desenvolvimento do aplicativo
+    adicionará um investimento maior ao projeto.
 
-    Sobre o sistema em si no quesito interface e funcionalidades
-    como é possível visualizar na figura \ref{fig:sistemaHome}
-    o sistema terá um design flat, limpo e direto com fundo e 
-    tons mais escuros para não cansar a vista dos usuários que 
-    responsáveis pelo monitoramento de temperatura das vacinas,
-    contará também com a opção de alterar a temperatura ideal,
-    de atenção e de alerta dos freezeres.
 
+    % Quanto a mobilidade do sistema, como é um sistema web
+    % então é acessado pelo navegador e pode ser facilmente
+    % acessado por um SmartPhone, o sistema será responsivo,
+    % porem se o cliente quiser um desempenho melhor e
+    % uma experiencia personalizada, um aplicativo
+    % mobile pode ser desenvolvido em React Native
+    % juntamente como o sistema, claro que isso aumentará
+    % os custos do desenvolvimento.
+%
+    % Sobre o sistema em si no quesito interface e funcionalidades
+    % como é possível visualizar na figura \ref{fig:sistemaHome}
+    % o sistema terá um design flat, limpo e direto com fundo e
+    % tons mais escuros para não cansar a vista dos usuários que
+    % responsáveis pelo monitoramento de temperatura das vacinas,
+    % contará também com a opção de alterar a temperatura ideal,
+    % de atenção e de alerta dos freezeres.
+%
     % Sobre as funcionalidades do sistema em si, ele terá um
-    % fundo escuro para não cansar as vistas dos usuários, 
+    % fundo escuro para não cansar as vistas dos usuários,
     % o sistema também possibilitará a mudança da temperatura
     % ideal, de atenção e alerta caso necessário,
+%
+    % O sistema também contará com telas para visualizar todo
+    % o histórico das variações de temperaturas,
+    % como também será possível visualizar a temperatura
+    % das vacinas em tempo real, como mostrado nas figuras
+    % \ref{fig:sistemaHistorico} e \ref{fig:sistemaTempReal}.
 
-    O sistema também contará com telas para visualizar todo
-    o histórico das variações de temperaturas, 
-    como também será possível visualizar a temperatura 
-    das vacinas em tempo real, como mostrado nas figuras
-    \ref{fig:sistemaHistorico} e \ref{fig:sistemaTempReal}.
+    O software terá primariamente uma tela inicial 
+    como podem observar na figura \ref{fig:desktopHome}, 
+    onde será possível navegar para as outras telas;
+    que serão as telas de configuração dos limites
+    de temperatura como mostrado na 
+    figura \ref{fig:desktopConfigTemp};
+    além de ter acesso a dashboards mostrando 
+    mínimos, máximos e a temperatura atual 
+    como é possível observar nas figuras 
+    \ref{fig:desktopDashboard1} e \ref{fig:desktopDashboard2};
+    e finalmente as visualizações de temperatura em 
+    tempo real (figura \ref{fig:desktopTempAtual})
+    e os históricos de variações de temperaturas,
+    figuras \ref{fig:desktopTempDiaria} e \ref{fig:desktopTempSemanal}
+    respectivamente.
+
+
+    \begin{figure}[ht]
+        \caption{Layout desktop home}
+        \centering
+        \includegraphics[scale=0.35]{img/desktop/home.jpeg}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:desktopHome}
+    \end{figure}
+
+    \begin{figure}[ht]
+        \caption{Layout desktop configuração de temperatura}
+        \centering
+        \includegraphics[scale=0.35]{img/desktop/config_temp.jpeg}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:desktopConfigTemp}
+    \end{figure}
+
+    \begin{figure}[ht]
+        \caption{Layout desktop temperatura atual}
+        \centering
+        \includegraphics[scale=0.35]{img/desktop/temp_atual.jpeg}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:desktopTempAtual}
+    \end{figure}
+
+    \begin{figure}[ht]
+        \caption{Layout desktop dashboard 1}
+        \centering
+        \includegraphics[scale=0.35]{img/desktop/dashboard_1.jpeg}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:desktopDashboard1}
+    \end{figure}
+
+    \begin{figure}[ht]
+        \caption{Layout desktop dashboard 2}
+        \centering
+        \includegraphics[scale=0.35]{img/desktop/dashboard_2.jpeg}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:desktopDashboard2}
+    \end{figure}
+
+    \begin{figure}[ht]
+        \caption{Layout desktop histórico diário}
+        \centering
+        \includegraphics[scale=0.35]{img/desktop/temp_diaria.jpeg}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:desktopTempDiaria}
+    \end{figure}
+
+    \begin{figure}[ht]
+        \caption{Layout desktop histórico semanal}
+        \centering
+        \includegraphics[scale=0.35]{img/desktop/temp_semanal.jpeg}
+        \legend{Fonte: Elaborado pelos autores}
+        \label{fig:desktopTempSemanal}
+    \end{figure}
+
+
+
 
     \begin{figure}[htb!]
         \caption{Layout mobile tela bem vindo}
@@ -133,83 +221,4 @@
     \end{figure}
 
 
-    % \begin{figure}[htb!]
-        % \caption{Tela inicial do sistema}
-        % \centering
-        % \includegraphics[scale=0.5]{img/sistema_home.png}
-        % \legend{Fonte: Elaborado pelos autores}
-        % \label{fig:sistemaHome}
-    % \end{figure}
-%
-    % \begin{figure}[ht]
-        % \caption{Tela de histórico de temperatura}
-        % \centering
-        % \includegraphics[scale=0.4]{img/sistema_historico.png}
-        % \legend{Fonte: Elaborado pelos autores}
-        % \label{fig:sistemaHistorico}
-    % \end{figure}
-%
-    % \begin{figure}[t]
-        % \caption{Tela de visualização em tempo real}
-        % \centering
-        % \includegraphics[scale=0.4]{img/sistema_temp_real.png}
-        % \legend{Fonte: Elaborado pelos autores}
-        % \label{fig:sistemaTempReal}
-    % \end{figure}
-%
 
-    \begin{figure}[ht]
-        \caption{Layout desktop home}
-        \centering
-        \includegraphics[scale=0.35]{img/desktop/home.jpeg}
-        \legend{Fonte: Elaborado pelos autores}
-        \label{fig:desktopHome}
-    \end{figure}
-
-    \begin{figure}[ht]
-        \caption{Layout desktop configuração de temperatura}
-        \centering
-        \includegraphics[scale=0.35]{img/desktop/config_temp.jpeg}
-        \legend{Fonte: Elaborado pelos autores}
-        \label{fig:desktopConfigTemp}
-    \end{figure}
-
-    \begin{figure}[ht]
-        \caption{Layout desktop temperatura atual}
-        \centering
-        \includegraphics[scale=0.35]{img/desktop/temp_atual.jpeg}
-        \legend{Fonte: Elaborado pelos autores}
-        \label{fig:desktopTempAtual}
-    \end{figure}
-
-    \begin{figure}[ht]
-        \caption{Layout desktop dashboard 1}
-        \centering
-        \includegraphics[scale=0.35]{img/desktop/dashboard_1.jpeg}
-        \legend{Fonte: Elaborado pelos autores}
-        \label{fig:desktopDashboard1}
-    \end{figure}
-
-    \begin{figure}[ht]
-        \caption{Layout desktop dashboard 2}
-        \centering
-        \includegraphics[scale=0.35]{img/desktop/dashboard_2.jpeg}
-        \legend{Fonte: Elaborado pelos autores}
-        \label{fig:desktopDashboard2}
-    \end{figure}
-
-    \begin{figure}[ht]
-        \caption{Layout desktop histórico diário}
-        \centering
-        \includegraphics[scale=0.35]{img/desktop/temp_diaria.jpeg}
-        \legend{Fonte: Elaborado pelos autores}
-        \label{fig:desktopTempDiaria}
-    \end{figure}
-
-    \begin{figure}[ht]
-        \caption{Layout desktop histórico semanal}
-        \centering
-        \includegraphics[scale=0.35]{img/desktop/temp_semanal.jpeg}
-        \legend{Fonte: Elaborado pelos autores}
-        \label{fig:desktopTempSemanal}
-    \end{figure}
